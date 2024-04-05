@@ -6,10 +6,10 @@ const userSchema = new mongoose.Schema({
     email: {type: String, required: true, unique: true, match: /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/},
     thoughts: [thoughtSchema],
     friends: [mongoose.ObjectId]
-})
+}, {toJSON: {virtuals: true}})
 
-userSchema.virtual('friendCount').get(() => {
-    return friends.length
+userSchema.virtual('friendCount').get(function() {
+    return this.friends.length
 })
 
 const User = mongoose.model('User', userSchema)
