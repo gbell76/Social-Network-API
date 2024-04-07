@@ -1,6 +1,5 @@
 {
   "dependencies": {
-    "dayjs": "^1.11.10",
     "express": "^4.19.2",
     "mongodb": "^6.5.0",
     "mongoose": "^8.2.4"
