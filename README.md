@@ -13,3 +13,4 @@ To run, type node server into the terminal. To use the models and routes, you mu
 N/A
 
 ## Video Link
+https://drive.google.com/file/d/1sm9dyWnSEXYx7mu865XPRZgYEZ_OOitF/view
